@@ -1,0 +1,19 @@
+{
+  "queries": [
+    {
+      "key": "age-curvature",
+      "coefficients": {
+        "A:20": 1,
+        "A:21": -2,
+        "A:22": 1
+      }
+    },
+    {
+      "key": "age-trend",
+      "coefficients": {
+        "A:20": -1,
+        "A:22": 1
+      }
+    }
+  ]
+}

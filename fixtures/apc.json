@@ -1,0 +1,26 @@
+{
+  "parameter_coding": "intercept_plus_all_category_indicators",
+  "rank_relative_tolerance": 1e-10,
+  "constraint_sets": [
+    {
+      "key": "period-flat-drift",
+      "rules": [
+        "sum(A)=0",
+        "sum(P)=0",
+        "sum(C)=0",
+        "sum((period-2021)*P)=0"
+      ]
+    },
+    {
+      "key": "cohort-flat-drift",
+      "rules": [
+        "sum(A)=0",
+        "sum(P)=0",
+        "sum(C)=0",
+        "sum((cohort-2000)*C)=0"
+      ]
+    }
+  ],
+  "variance_model": "independent_WLS_weights_relative_precision",
+  "interval_alpha": 0.05
+}

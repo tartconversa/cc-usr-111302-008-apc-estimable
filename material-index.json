@@ -1,0 +1,17 @@
+[
+  {
+    "path": "fixtures/apc.csv",
+    "sha256": "fd91e843d2a57683c88e04e05fd0e98e0f842cb229aa7890d3c20bad731cdea5",
+    "size_bytes": 221
+  },
+  {
+    "path": "fixtures/apc.json",
+    "sha256": "44512bea7c8cacc9fd604f716bcb3c7457d7cf27379d83375e91071c93b6f2d7",
+    "size_bytes": 552
+  },
+  {
+    "path": "fixtures/contrasts.json",
+    "sha256": "6cf75a5348f25b6b050e397fead643e3d60f9c018ef14e1991b5ef89bc3f766f",
+    "size_bytes": 263
+  }
+]
