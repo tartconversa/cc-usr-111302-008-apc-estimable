@@ -1,0 +1,2 @@
+[console_scripts]
+apc-estimable = src.apc_cli:main

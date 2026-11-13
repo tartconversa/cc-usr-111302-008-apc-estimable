@@ -1,0 +1,666 @@
+{
+  "data": {
+    "n_cells": 9,
+    "age_levels": [
+      20,
+      21,
+      22
+    ],
+    "period_levels": [
+      2020,
+      2021,
+      2022
+    ],
+    "cohort_levels": [
+      1998,
+      1999,
+      2000,
+      2001,
+      2002
+    ],
+    "missing_cells": [],
+    "n_missing_cells": 0,
+    "connected_components": [
+      {
+        "factor_vertices": [
+          "A:20",
+          "A:21",
+          "A:22",
+          "C:1998",
+          "C:1999",
+          "C:2000",
+          "C:2001",
+          "C:2002",
+          "P:2020",
+          "P:2021",
+          "P:2022"
+        ],
+        "n_vertices": 11
+      }
+    ],
+    "n_components": 1
+  },
+  "design": {
+    "parameter_coding": "intercept_plus_all_category_indicators",
+    "columns": [
+      "intercept",
+      "A:20",
+      "A:21",
+      "A:22",
+      "P:2020",
+      "P:2021",
+      "P:2022",
+      "C:1998",
+      "C:1999",
+      "C:2000",
+      "C:2001",
+      "C:2002"
+    ],
+    "n_parameters": 12,
+    "rank": 8,
+    "nullity": 4,
+    "residual_df": 1,
+    "rank_relative_tolerance": 1e-10,
+    "singular_values": [
+      4.140974883735899,
+      2.10100298961546,
+      1.9046212209469873,
+      1.7320508075688767,
+      1.7320508075688767,
+      1.5831525139373082,
+      1.259280126749765,
+      0.8475689556613469,
+      3.429036522463437e-16
+    ],
+    "canonical_null_directions": {
+      "constant_releveling": {
+        "max_abs_Xv": 0.0,
+        "in_null_space": true,
+        "distance_to_numerical_nullspace": 8.869980233582927e-15
+      },
+      "linear_drift": {
+        "max_abs_Xv": 0.0,
+        "in_null_space": true,
+        "distance_to_numerical_nullspace": 2.066641366284172e-12
+      },
+      "drift_orthogonal_to_constant": 4000.0
+    },
+    "extra_nullity": 0,
+    "extra_nullity_reasons": [
+      "存在只在单个观测格出现的水平（因子 C 的单格水平 [1998, 2002]）：其系数可被同行其他项完全吸收，对应边界零方向；只检查经典线性漂移会漏掉这些退化"
+    ]
+  },
+  "unconstrained_wls": {
+    "method": "SVD 最小范数解（代表同一拟合等价类，不构成识别）",
+    "sse": 2.4959559041192814e-27,
+    "sigma2": 2.4959559041192814e-27,
+    "residual_df": 1,
+    "intervals_emitted": false,
+    "residual_is_machine_precision_noise": true,
+    "interval_note": "残差相对响应能量处于机器精度量级，sigma^2 只反映浮点舍入而非抽样误差；下列区间在数值上可算但无统计精度含义，不可解读为高置信",
+    "fitted": [
+      {
+        "age": 20,
+        "period": 2020,
+        "cohort": 2000,
+        "y": 12.0,
+        "weight": 1.0,
+        "fitted": 11.999999999999979,
+        "residual": 2.1316282072803006e-14
+      },
+      {
+        "age": 20,
+        "period": 2021,
+        "cohort": 2001,
+        "y": 12.2,
+        "weight": 1.0,
+        "fitted": 12.199999999999985,
+        "residual": 1.4210854715202004e-14
+      },
+      {
+        "age": 20,
+        "period": 2022,
+        "cohort": 2002,
+        "y": 12.4,
+        "weight": 1.0,
+        "fitted": 12.399999999999983,
+        "residual": 1.7763568394002505e-14
+      },
+      {
+        "age": 21,
+        "period": 2020,
+        "cohort": 1999,
+        "y": 12.4,
+        "weight": 1.0,
+        "fitted": 12.399999999999988,
+        "residual": 1.2434497875801753e-14
+      },
+      {
+        "age": 21,
+        "period": 2021,
+        "cohort": 2000,
+        "y": 12.6,
+        "weight": 1.0,
+        "fitted": 12.599999999999982,
+        "residual": 1.7763568394002505e-14
+      },
+      {
+        "age": 21,
+        "period": 2022,
+        "cohort": 2001,
+        "y": 12.8,
+        "weight": 1.0,
+        "fitted": 12.799999999999988,
+        "residual": 1.2434497875801753e-14
+      },
+      {
+        "age": 22,
+        "period": 2020,
+        "cohort": 1998,
+        "y": 12.2,
+        "weight": 1.0,
+        "fitted": 12.199999999999982,
+        "residual": 1.7763568394002505e-14
+      },
+      {
+        "age": 22,
+        "period": 2021,
+        "cohort": 1999,
+        "y": 12.399999999999999,
+        "weight": 1.0,
+        "fitted": 12.399999999999984,
+        "residual": 1.4210854715202004e-14
+      },
+      {
+        "age": 22,
+        "period": 2022,
+        "cohort": 2000,
+        "y": 12.6,
+        "weight": 1.0,
+        "fitted": 12.59999999999998,
+        "residual": 1.9539925233402755e-14
+      }
+    ],
+    "curves": [
+      {
+        "factor": "age",
+        "levels": [
+          20,
+          21,
+          22
+        ],
+        "coefficients": [
+          1.9999999999999973,
+          2.4142857142857137,
+          2.228571428571425
+        ],
+        "second_differences": [
+          {
+            "level": 21,
+            "left_spacing": 1.0,
+            "right_spacing": 1.0,
+            "equally_spaced": true,
+            "raw_second_difference": -0.600000000000005,
+            "second_divided_difference": -0.600000000000005,
+            "estimable": true,
+            "max_abs_nullspace_inner_product": 5.551115123125783e-16
+          }
+        ]
+      },
+      {
+        "factor": "period",
+        "levels": [
+          2020,
+          2021,
+          2022
+        ],
+        "coefficients": [
+          2.0285714285714245,
+          2.2142857142857117,
+          2.3999999999999977
+        ],
+        "second_differences": [
+          {
+            "level": 2021,
+            "left_spacing": 1.0,
+            "right_spacing": 1.0,
+            "equally_spaced": true,
+            "raw_second_difference": -1.3322676295501878e-15,
+            "second_divided_difference": -1.3322676295501878e-15,
+            "estimable": true,
+            "max_abs_nullspace_inner_product": 9.159339953157541e-16
+          }
+        ]
+      },
+      {
+        "factor": "cohort",
+        "levels": [
+          1998,
+          1999,
+          2000,
+          2001,
+          2002
+        ],
+        "coefficients": [
+          1.2999999999999978,
+          1.314285714285714,
+          1.3285714285714239,
+          1.3428571428571434,
+          1.3571428571428552
+        ],
+        "second_differences": [
+          {
+            "level": 1999,
+            "left_spacing": 1.0,
+            "right_spacing": 1.0,
+            "equally_spaced": true,
+            "raw_second_difference": -6.439293542825908e-15,
+            "second_divided_difference": -6.439293542825908e-15,
+            "estimable": true,
+            "max_abs_nullspace_inner_product": 4.579669976578771e-15
+          },
+          {
+            "level": 2000,
+            "left_spacing": 1.0,
+            "right_spacing": 1.0,
+            "equally_spaced": true,
+            "raw_second_difference": 9.769962616701378e-15,
+            "second_divided_difference": 9.769962616701378e-15,
+            "estimable": true,
+            "max_abs_nullspace_inner_product": 5.925815393936773e-15
+          },
+          {
+            "level": 2001,
+            "left_spacing": 1.0,
+            "right_spacing": 1.0,
+            "equally_spaced": true,
+            "raw_second_difference": -7.771561172376096e-15,
+            "second_divided_difference": -7.771561172376096e-15,
+            "estimable": true,
+            "max_abs_nullspace_inner_product": 4.3298697960381105e-15
+          }
+        ]
+      }
+    ],
+    "curvature_nullspace_checks": [
+      {
+        "factor": "age",
+        "checks": [
+          {
+            "level": 21,
+            "max_abs_nullspace_inner_product": 5.551115123125783e-16,
+            "orthogonal": true
+          }
+        ]
+      },
+      {
+        "factor": "period",
+        "checks": [
+          {
+            "level": 2021,
+            "max_abs_nullspace_inner_product": 9.159339953157541e-16,
+            "orthogonal": true
+          }
+        ]
+      },
+      {
+        "factor": "cohort",
+        "checks": [
+          {
+            "level": 1999,
+            "max_abs_nullspace_inner_product": 4.579669976578771e-15,
+            "orthogonal": true
+          },
+          {
+            "level": 2000,
+            "max_abs_nullspace_inner_product": 5.925815393936773e-15,
+            "orthogonal": true
+          },
+          {
+            "level": 2001,
+            "max_abs_nullspace_inner_product": 4.3298697960381105e-15,
+            "orthogonal": true
+          }
+        ]
+      }
+    ]
+  },
+  "contrasts": [
+    {
+      "key": "age-curvature",
+      "estimable": true,
+      "null_projection_norm": 7.736788912175082e-16,
+      "max_abs_nullspace_inner_product": 5.551115123125783e-16,
+      "estimate": -0.600000000000005,
+      "std_error": 7.899297285390773e-14,
+      "ci_level": 0.95,
+      "ci_low": -0.6000000000010087,
+      "ci_high": -0.5999999999990012,
+      "interval_has_statistical_meaning": false,
+      "reason": "可估；区间基于独立同方差加权误差假设，t 分位数 df=1",
+      "interval_warning": "残差为机器精度噪声，此区间仅形式存在，不代表可实现的统计精度"
+    },
+    {
+      "key": "age-trend",
+      "estimable": false,
+      "null_projection_norm": 0.5345224838248481,
+      "max_abs_nullspace_inner_product": 0.4585091249695902,
+      "estimate": null,
+      "std_error": null,
+      "ci_level": 0.95,
+      "ci_low": null,
+      "ci_high": null,
+      "interval_has_statistical_meaning": false,
+      "reason": "l 在零空间上的投影非零：该线性组合含不可识别的常数/漂移（或断连产生的额外退化）方向，数据无法确定其值",
+      "note": "不可估线性趋势：不同识别约束会给出不同数值，数据本身无法确定"
+    }
+  ],
+  "constraint_sets": [
+    {
+      "key": "period-flat-drift",
+      "rules": [
+        "sum(A)=0",
+        "sum(P)=0",
+        "sum(C)=0",
+        "sum((period-2021)*P)=0"
+      ],
+      "status": "equivalent_reparameterization",
+      "spans_null_space": true,
+      "R_nullspace_rank": 4,
+      "R_nullspace_singular_values": [
+        2.16180454517834,
+        1.7320508075688774,
+        1.3112811488401004,
+        0.5345224838248491
+      ],
+      "constraint_residual": 1.0408340855860843e-14,
+      "sse": 5.806016262426647e-28,
+      "sse_delta_vs_unconstrained": -1.9153542778766167e-27,
+      "note": "约束恰好张成零空间且不改变 SSE：只是同一等价类内的重参数化，拟合值、残差与所有可估对比与未约束解完全相同；被约束固定的线性趋势本身仍不可估",
+      "coefficients": {
+        "intercept": 12.399999999999984,
+        "A:20": -0.39999999999999597,
+        "A:21": 0.2000000000000034,
+        "A:22": 0.20000000000000298,
+        "P:2020": 5.731526364627371e-15,
+        "P:2021": 2.6645352591003757e-15,
+        "P:2022": 1.817990202823694e-15,
+        "C:1998": -0.400000000000005,
+        "C:1999": -0.20000000000000118,
+        "C:2000": 6.522560269672795e-15,
+        "C:2001": 0.2000000000000018,
+        "C:2002": 0.39999999999999897
+      },
+      "curves": [
+        {
+          "factor": "age",
+          "levels": [
+            20,
+            21,
+            22
+          ],
+          "coefficients": [
+            -0.39999999999999597,
+            0.2000000000000034,
+            0.20000000000000298
+          ],
+          "second_differences": [
+            {
+              "level": 21,
+              "left_spacing": 1.0,
+              "right_spacing": 1.0,
+              "equally_spaced": true,
+              "raw_second_difference": -0.5999999999999998,
+              "second_divided_difference": -0.5999999999999999,
+              "estimable": true,
+              "max_abs_nullspace_inner_product": 5.551115123125783e-16
+            }
+          ]
+        },
+        {
+          "factor": "period",
+          "levels": [
+            2020,
+            2021,
+            2022
+          ],
+          "coefficients": [
+            5.731526364627371e-15,
+            2.6645352591003757e-15,
+            1.817990202823694e-15
+          ],
+          "second_differences": [
+            {
+              "level": 2021,
+              "left_spacing": 1.0,
+              "right_spacing": 1.0,
+              "equally_spaced": true,
+              "raw_second_difference": 2.220446049250313e-15,
+              "second_divided_difference": 2.220446049250313e-15,
+              "estimable": true,
+              "max_abs_nullspace_inner_product": 9.159339953157541e-16
+            }
+          ]
+        },
+        {
+          "factor": "cohort",
+          "levels": [
+            1998,
+            1999,
+            2000,
+            2001,
+            2002
+          ],
+          "coefficients": [
+            -0.400000000000005,
+            -0.20000000000000118,
+            6.522560269672795e-15,
+            0.2000000000000018,
+            0.39999999999999897
+          ],
+          "second_differences": [
+            {
+              "level": 1999,
+              "left_spacing": 1.0,
+              "right_spacing": 1.0,
+              "equally_spaced": true,
+              "raw_second_difference": 3.885780586188048e-15,
+              "second_divided_difference": 3.858025010572419e-15,
+              "estimable": true,
+              "max_abs_nullspace_inner_product": 4.579669976578771e-15
+            },
+            {
+              "level": 2000,
+              "left_spacing": 1.0,
+              "right_spacing": 1.0,
+              "equally_spaced": true,
+              "raw_second_difference": -1.2434497875801753e-14,
+              "second_divided_difference": -1.2434497875801753e-14,
+              "estimable": true,
+              "max_abs_nullspace_inner_product": 5.925815393936773e-15
+            },
+            {
+              "level": 2001,
+              "left_spacing": 1.0,
+              "right_spacing": 1.0,
+              "equally_spaced": true,
+              "raw_second_difference": 1.915134717478395e-15,
+              "second_divided_difference": 1.915134717478395e-15,
+              "estimable": true,
+              "max_abs_nullspace_inner_product": 4.3298697960381105e-15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "cohort-flat-drift",
+      "rules": [
+        "sum(A)=0",
+        "sum(P)=0",
+        "sum(C)=0",
+        "sum((cohort-2000)*C)=0"
+      ],
+      "status": "equivalent_reparameterization",
+      "spans_null_space": true,
+      "R_nullspace_rank": 4,
+      "R_nullspace_singular_values": [
+        2.6726124191242433,
+        2.1618045451783403,
+        1.7320508075688776,
+        1.3112811488400997
+      ],
+      "constraint_residual": 4.0314973581701e-15,
+      "sse": 5.301145283085199e-28,
+      "sse_delta_vs_unconstrained": -1.9658413758107614e-27,
+      "note": "约束恰好张成零空间且不改变 SSE：只是同一等价类内的重参数化，拟合值、残差与所有可估对比与未约束解完全相同；被约束固定的线性趋势本身仍不可估",
+      "coefficients": {
+        "intercept": 12.399999999999993,
+        "A:20": -0.20000000000000046,
+        "A:21": 0.20000000000000073,
+        "A:22": -5.342948306008566e-16,
+        "P:2020": -0.20000000000000248,
+        "P:2021": 1.186550857568136e-15,
+        "P:2022": 0.20000000000000082,
+        "C:1998": -3.1676050671336498e-15,
+        "C:1999": -1.5959455978986625e-15,
+        "C:2000": 5.3637649877202875e-15,
+        "C:2001": -1.4085954624931674e-15,
+        "C:2002": -3.2231162183649076e-15
+      },
+      "curves": [
+        {
+          "factor": "age",
+          "levels": [
+            20,
+            21,
+            22
+          ],
+          "coefficients": [
+            -0.20000000000000046,
+            0.20000000000000073,
+            -5.342948306008566e-16
+          ],
+          "second_differences": [
+            {
+              "level": 21,
+              "left_spacing": 1.0,
+              "right_spacing": 1.0,
+              "equally_spaced": true,
+              "raw_second_difference": -0.6000000000000025,
+              "second_divided_difference": -0.6000000000000024,
+              "estimable": true,
+              "max_abs_nullspace_inner_product": 5.551115123125783e-16
+            }
+          ]
+        },
+        {
+          "factor": "period",
+          "levels": [
+            2020,
+            2021,
+            2022
+          ],
+          "coefficients": [
+            -0.20000000000000248,
+            1.186550857568136e-15,
+            0.20000000000000082
+          ],
+          "second_differences": [
+            {
+              "level": 2021,
+              "left_spacing": 1.0,
+              "right_spacing": 1.0,
+              "equally_spaced": true,
+              "raw_second_difference": -4.0245584642661925e-15,
+              "second_divided_difference": -4.052314039881821e-15,
+              "estimable": true,
+              "max_abs_nullspace_inner_product": 9.159339953157541e-16
+            }
+          ]
+        },
+        {
+          "factor": "cohort",
+          "levels": [
+            1998,
+            1999,
+            2000,
+            2001,
+            2002
+          ],
+          "coefficients": [
+            -3.1676050671336498e-15,
+            -1.5959455978986625e-15,
+            5.3637649877202875e-15,
+            -1.4085954624931674e-15,
+            -3.2231162183649076e-15
+          ],
+          "second_differences": [
+            {
+              "level": 1999,
+              "left_spacing": 1.0,
+              "right_spacing": 1.0,
+              "equally_spaced": true,
+              "raw_second_difference": 5.388051116383963e-15,
+              "second_divided_difference": 5.388051116383963e-15,
+              "estimable": true,
+              "max_abs_nullspace_inner_product": 4.579669976578771e-15
+            },
+            {
+              "level": 2000,
+              "left_spacing": 1.0,
+              "right_spacing": 1.0,
+              "equally_spaced": true,
+              "raw_second_difference": -1.3732071035832405e-14,
+              "second_divided_difference": -1.3732071035832405e-14,
+              "estimable": true,
+              "max_abs_nullspace_inner_product": 5.925815393936773e-15
+            },
+            {
+              "level": 2001,
+              "left_spacing": 1.0,
+              "right_spacing": 1.0,
+              "equally_spaced": true,
+              "raw_second_difference": 4.957839694341715e-15,
+              "second_divided_difference": 4.957839694341715e-15,
+              "estimable": true,
+              "max_abs_nullspace_inner_product": 4.3298697960381105e-15
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cross_constraint_check": {
+    "fitted_value_comparison": [
+      {
+        "key": "period-flat-drift",
+        "max_abs_fitted_diff": 2.1316282072803006e-14,
+        "same_equivalence_class": true
+      },
+      {
+        "key": "cohort-flat-drift",
+        "max_abs_fitted_diff": 1.9539925233402755e-14,
+        "same_equivalence_class": true
+      }
+    ],
+    "estimable_contrast_comparison": [
+      {
+        "key": "age-curvature",
+        "values": {
+          "period-flat-drift": -0.5999999999999998,
+          "cohort-flat-drift": -0.6000000000000024
+        },
+        "max_abs_diff_across_constraints": 2.6645352591003757e-15
+      }
+    ],
+    "summary": "若各约束仅选择同一等价类，则预测与可估对比必须数值相同；任何 SSE/拟合差异都意味着引入了额外模型假设"
+  },
+  "interpretation_guardrails": [
+    "可估性由原始未约束设计矩阵的完整数值零空间定义，加约束后的满秩矩阵不改变这一结论",
+    "线性漂移（A+t*age, P-t*period, C+t*cohort）保持所有拟合值不变，因此线性趋势本身不可估",
+    "等间隔曲线的二阶差分对该漂移不变，但仍已逐一核对其与完整零空间正交",
+    "约束选出的队列/时期趋势只是识别假设下的一组解，不得解释为代际或时期的因果影响",
+    "区间仅在独立同方差加权误差假设下成立；残差自由度为 0 时不输出假精度"
+  ]
+}
